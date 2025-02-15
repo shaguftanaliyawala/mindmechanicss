@@ -44,7 +44,7 @@ export default function HomePage() {
       <ProcessSection />
       <CTASection />
       <Analytics />
-      <SpeedInsights/>
+      <SpeedInsights />
     </div>
   )
 }
