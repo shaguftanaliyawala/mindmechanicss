@@ -18,7 +18,7 @@ const phrases = [
 
 // Video sources (replace with actual paths)
 const videos = [
-  "/sunrise.webm",
+  "/sunrise_1.mp4",
 ]
 
 // Video Background Component
