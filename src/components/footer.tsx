@@ -78,6 +78,7 @@ export function Footer() {
                   <Instagram className="w-4 h-4" /> Instagram
                 </a>
               </li>
+              
             </ul>
           </div>
         </div>
