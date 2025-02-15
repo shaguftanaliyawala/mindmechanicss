@@ -56,40 +56,34 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-3">Legal</h3>
+            <h3 className="font-semibold mb-3">Social</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary">
-                  Privacy Policy
-                </Link>
+                <a href="mailto:mindmechanics09@gmail.com" className="flex items-center gap-2 hover:text-primary">
+                  <Mail className="w-4 h-4" /> Email
+                </a>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary">
-                  Terms of Service
-                </Link>
+                <a href="https://www.instagram.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                  <Instagram className="w-4 h-4" /> Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                  <Facebook className="w-4 h-4" /> Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/shagufta-salman-naliyawala-344aa3231" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                  <Linkedin className="w-4 h-4" /> LinkedIn
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <div className="flex space-x-6">
-            <a href="mailto:mindmechanics09@gmail.com" className="flex items-center gap-2 hover:text-primary">
-              <Mail className="w-4 h-4" /> Email
-            </a>
-            <a href="https://www.instagram.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-              <Instagram className="w-4 h-4" /> Instagram
-            </a>
-            <a href="https://www.facebook.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-              <Facebook className="w-4 h-4" /> Facebook
-            </a>
-            <a href="https://www.linkedin.com/in/shagufta-salman-naliyawala-344aa3231/?fbclid=IwY2xjawIctUtleHRuA2FlbQIxMAABHadG1x6z2CGNZOEH6PEy4xxN0EpOfZ33vom7MLSHUCOICBwSYVvOyjHE_w_aem_MuTG2A9A_SS12kyfDcwDHg" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-              <Linkedin className="w-4 h-4" /> LinkedIn
-            </a>
-          </div>
-          <div className="mt-4 md:mt-0 text-center md:text-right">
-            <p>© {new Date().getFullYear()} Mind Mechanics. All rights reserved.</p>
-            <p>Developed by Muhammad Sami</p>
-          </div>
+        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+          <p>© {new Date().getFullYear()} Mind Mechanics. All rights reserved.</p>
+          <p>Developed by Muhammad Sami</p>
         </div>
       </div>
     </footer>
