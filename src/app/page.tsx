@@ -9,6 +9,8 @@ import { ServicesSection } from "@/components/services-section"
 import { StatsSection } from "@/components/stats-section"
 import { ProcessSection } from "@/components/process-section"
 import { CTASection } from "@/components/cta-section"
+import { Analytics } from "@vercel/analytics/react"
+
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
