@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 
-const videoSrc = "/sunrise.webm" // Replace with your actual video file
+const videoSrc = "/sunrise.mp4" // Replace with your actual video file
 
 export function VideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null)
