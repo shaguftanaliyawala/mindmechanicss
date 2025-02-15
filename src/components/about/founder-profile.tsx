@@ -27,7 +27,7 @@ export function FounderProfile() {
                 Meet <strong>Shagufta Salman Naliyawala</strong>, the visionary Founder and CEO of Mind Mechanics. With
                 over <strong>13+ years of experience</strong> in psychotherapy, addiction counseling, Reiki healing,
                 EFT, numerology, and gemstone healing, she has transformed the lives of more than{" "}
-                <strong>1950+ clients</strong>
+                <strong>1950+ clients </strong>
                 and partnered with <strong>19+ corporate organizations</strong>.
               </p>
               <p className="text-lg text-muted-foreground">

@@ -10,15 +10,15 @@ const specializations = [
   "Reiki Healing & EFT (Emotional Freedom Technique)",
   "Hypnotherapy & Mindfulness",
   "Systemic Family Therapy",
-  "Child Psychology & Montessori Education",
+  "Montessori Directress",
 ]
 
 const achievements = [
-  "13+ years in psychotherapy and counseling",
-  "800+ clients treated through therapy sessions",
-  "Founder of Mind-Mechanics, offering alternative healing therapies",
+  "13+ years in hypnotherapy, reiki healing, psychotherapy and counseling",
+  "1950+ clients treated through therapy sessions",
+  "Founder and CEO of Mind-Mechanics, offering alternative healing therapies",
   "Mental Health Therapist at doctHERs (since 2020)",
-  "Trainee Psychotherapist at Therapy Works, Karachi",
+  "Psychotherapist at Therapy Works, Karachi",
   "Conducted multiple corporate workshops & training sessions",
 ]
 
@@ -37,7 +37,7 @@ export default function TherapistPage() {
               className="max-w-2xl text-white"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Shagufta Salman Naliyawala</h1>
-              <p className="text-xl md:text-2xl text-gray-200">Psychotherapist, Hypnotherapist & Holistic Healer</p>
+              <p className="text-xl md:text-2xl text-gray-200">Psychotherapist, Reiki Master & Mental Health Therapist</p>
             </motion.div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function TherapistPage() {
               With over 13 years of experience in psychotherapy, counseling, and holistic healing, I am committed to guiding individuals toward emotional and mental well-being. My approach integrates psychotherapy, cognitive therapies, and alternative healing techniques such as Reiki, EFT, and hypnotherapy to foster personal transformation.
             </p>
             <p className="text-lg text-muted-foreground">
-              I am a certified Level 5 Integrative Psychotherapist (CPCAB, UK) and a recognized hypnotherapist by the National Guild of Hypnotists, USA. As the founder of Mind-Mechanics and a Mental Health Therapist at doctHERs, I have successfully provided therapy to over 800 clients, offering personalized healing solutions for individuals, couples, and rehabilitation cases.
+              I am a certified Level 5 Integrative Psychotherapist (CPCAB, UK) and a recognized hypnotherapist by the National Guild of Hypnotists, USA. As the founder of Mind-Mechanics and a Mental Health Therapist at doctHERs, I have successfully provided therapy to over 1950 clients, offering personalized healing solutions for individuals, couples, and rehabilitation cases.
             </p>
           </motion.div>
         </div>
