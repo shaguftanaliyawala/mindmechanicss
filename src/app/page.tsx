@@ -10,7 +10,7 @@ import { StatsSection } from "@/components/stats-section"
 import { ProcessSection } from "@/components/process-section"
 import { CTASection } from "@/components/cta-section"
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 
 const fadeInUp = {
@@ -44,7 +44,6 @@ export default function HomePage() {
       <ProcessSection />
       <CTASection />
       <Analytics />
-      <SpeedInsights />
     </div>
   )
 }
