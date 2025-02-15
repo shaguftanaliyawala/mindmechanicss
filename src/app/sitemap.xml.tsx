@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function Sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = "https://mindmechanci-git-main-786samifaisal-gmailcoms-projects.vercel.app"; // Change to your actual domain
+  const siteUrl = "mindmechanicss.com"; // Change to your actual domain
 
   const pages = [
     "/",
