@@ -42,6 +42,7 @@ export default function HomePage() {
       <StatsSection />
       <ProcessSection />
       <CTASection />
+      <Analytics />
     </div>
   )
 }
