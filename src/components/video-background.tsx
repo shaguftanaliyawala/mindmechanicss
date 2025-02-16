@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image";
 
 const videoSrc = "/sunrise_1.mp4" // Replace with your actual video file
 
@@ -49,14 +50,16 @@ export function VideoBackground() {
         <source src={videoSrc} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/50" />
-      {isIOS && (
-        <img
-          src="/fallback-image.jpg" // Replace with a fallback image
-          alt="Fallback for iOS"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          style={{ objectPosition: "center top" }}
-        />
-      )}
+        {isIOS && (
+          <Image
+            src="/fallback-image.jpg" // Replace with your actual fallback image path
+            alt="Fallback for iOS"
+            fill
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            style={{ objectPosition: "center top" }}
+            priority
+          />
+        )}
     </div>
   )
 }

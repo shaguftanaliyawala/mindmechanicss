@@ -12,6 +12,7 @@ import { CTASection } from "@/components/cta-section"
 import { Analytics } from "@vercel/analytics/react"
 
 
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },

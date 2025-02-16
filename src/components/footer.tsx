@@ -69,15 +69,16 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-                  <Instagram className="w-4 h-4" /> Instagram
-                </a>
-              </li>
-              <li>
                 <a href="https://www.facebook.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
                   <Facebook className="w-4 h-4" /> Facebook
                 </a>
               </li>
+              <li>
+                <a href="https://www.instagram.com/mindmechanics09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                  <Instagram className="w-4 h-4" /> Instagram
+                </a>
+              </li>
+              
             </ul>
           </div>
         </div>
