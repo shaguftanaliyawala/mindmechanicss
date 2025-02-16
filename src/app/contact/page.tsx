@@ -1,12 +1,44 @@
 "use client"
 
+import type React from "react"
+
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react"
+import { useToast } from "@/hooks/use-toast"
+import { submitContact } from "./actions"
 
 export default function ContactPage() {
+  const { toast } = useToast()
+  const [loading, setLoading] = useState(false)
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setLoading(true)
+
+    const formData = new FormData(event.currentTarget)
+    const response = await submitContact(formData)
+
+    if (response.success) {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for contacting us. We'll get back to you soon.",
+      })
+      // Reset the form
+      event.currentTarget.reset()
+    } else {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      })
+    }
+    setLoading(false)
+  }
+
   return (
     <div className="container py-20">
       <motion.h1
@@ -31,12 +63,14 @@ export default function ContactPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <form className="space-y-6">
-            <Input placeholder="Your Name" />
-            <Input type="email" placeholder="Your Email" />
-            <Input placeholder="Subject" />
-            <Textarea placeholder="Your Message" rows={6} />
-            <Button size="lg">Send Message</Button>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <Input name="name" placeholder="Your Name" required />
+            <Input name="email" type="email" placeholder="Your Email" required />
+            <Input name="subject" placeholder="Subject" required />
+            <Textarea name="message" placeholder="Your Message" rows={6} required />
+            <Button type="submit" size="lg" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
+            </Button>
           </form>
         </motion.div>
         <motion.div
@@ -67,7 +101,11 @@ export default function ContactPage() {
           </div>
           <div className="flex items-center space-x-4">
             <Linkedin className="text-primary" />
-            <a href="https://www.linkedin.com/in/shagufta-salman-naliyawala-344aa3231/?fbclid=IwY2xjawIctUtleHRuA2FlbQIxMAABHadG1x6z2CGNZOEH6PEy4xxN0EpOfZ33vom7MLSHUCOICBwSYVvOyjHE_w_aem_MuTG2A9A_SS12kyfDcwDHg" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/shagufta-salman-naliyawala-344aa3231/?fbclid=IwY2xjawIctUtleHRuA2FlbQIxMAABHadG1x6z2CGNZOEH6PEy4xxN0EpOfZ33vom7MLSHUCOICBwSYVvOyjHE_w_aem_MuTG2A9A_SS12kyfDcwDHg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </a>
           </div>
@@ -76,3 +114,4 @@ export default function ContactPage() {
     </div>
   )
 }
+
