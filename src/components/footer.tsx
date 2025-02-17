@@ -44,8 +44,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/workshops" className="text-sm text-muted-foreground hover:text-primary">
-                  Workshops
+                <Link href="/therapist" className="text-sm text-muted-foreground hover:text-primary">
+                  Our Therapist
                 </Link>
               </li>
               <li>
