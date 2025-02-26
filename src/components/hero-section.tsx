@@ -5,6 +5,8 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Brain, Sparkles } from "lucide-react"
+import { OptimizedImage } from './optimized-image'
+import dynamic from 'next/dynamic'
 
 // Rotating phrases for hero section
 const phrases = [
