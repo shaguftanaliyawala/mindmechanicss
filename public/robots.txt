@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.mindmechanicss.com
+Host: http://localhost:3000
 
 # Sitemaps
-Sitemap: https://www.mindmechanicss.com/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml
