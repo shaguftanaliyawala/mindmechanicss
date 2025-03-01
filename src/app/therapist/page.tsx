@@ -27,7 +27,7 @@ export default function TherapistPage() {
     <div className="space-y-20">
       {/* Hero Section */}
       <section className="relative h-[600px]">
-        <Image src="/WhatsApp Image 2025-02-15 at 15.57.40_8f915132.jpg" alt="Therapy Session Background" fill className="object-cover object-top" />
+        <Image src="/WhatsApp Image 2025-02-15 at 15.57.40_8f915132.webp" alt="Therapy Session Background" fill className="object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80">
           <div className="container h-full flex items-center">
             <motion.div
@@ -52,7 +52,7 @@ export default function TherapistPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <Image src="/sha.jpg" alt="Shagufta Salman Naliyawala" width={500} height={600} className="rounded-2xl" />
+            <Image src="/sha.webp" alt="Shagufta Salman Naliyawala" width={500} height={600} className="rounded-2xl" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}

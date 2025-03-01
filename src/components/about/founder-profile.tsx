@@ -42,7 +42,7 @@ export function FounderProfile() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <Image src="/sha.jpg" alt="Shagufta Salman Naliyawala" width={400} height={500} className="rounded-xl" />
+              <Image src="/sha.webp" alt="Shagufta Salman Naliyawala" width={400} height={500} className="rounded-xl" />
             </motion.div>
           </div>
         </div>
