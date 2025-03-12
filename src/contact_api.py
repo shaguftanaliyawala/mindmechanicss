@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 # Allow requests from your Next.js app domain
-CORS(app, resources={r"/api/*": {"origins": ["http://localhost:3000", "https://mindmechanicss.com"]}})
+CORS(app, resources={r"/api/*": {"origins": [os.getenv("FRONTEND_URL", "http://localhost:3000")]}})
 
 # Define the path for the CSV file
 CSV_FILE = 'contact_submissions.csv'
