@@ -5,20 +5,20 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, Instagram, Facebook, Linkedin } from 'lucide-react'
+import { Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react"
 
 // API URL - change this to your deployed API URL when going to production
-const API_URL = 'http://localhost:5000/api/contact'
+const API_URL = "http://localhost:5000/api/contact"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
   const [errorMessage, setErrorMessage] = useState("")
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -29,7 +29,7 @@ export default function ContactPage() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setIsSubmitting(true)
-    setSubmitStatus('idle')
+    setSubmitStatus("idle")
     setErrorMessage("")
     
     try {
@@ -37,9 +37,9 @@ export default function ContactPage() {
       console.log("API URL:", API_URL)
       
       const response = await fetch(API_URL, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       })
@@ -50,15 +50,15 @@ export default function ContactPage() {
       console.log("Response data:", result)
       
       if (result.success) {
-        setSubmitStatus('success')
-        setFormData({ name: '', email: '', subject: '', message: '' })
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", subject: "", message: "" })
       } else {
-        setSubmitStatus('error')
+        setSubmitStatus("error")
         setErrorMessage(result.message || "Failed to submit form")
       }
     } catch (error) {
-      console.error('Error submitting form:', error)
-      setSubmitStatus('error')
+      console.error("Error submitting form:", error)
+      setSubmitStatus("error")
       setErrorMessage("Network error. Please check if the API server is running.")
     } finally {
       setIsSubmitting(false)
@@ -121,16 +121,16 @@ export default function ContactPage() {
               onChange={handleChange}
             />
             <Button type="submit" size="lg" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
             
-            {submitStatus === 'success' && (
+            {submitStatus === "success" && (
               <p className="mt-4 text-green-500">
-                Thank you for your message! We'll get back to you soon.
+                Thank you for your message! We will get back to you soon.
               </p>
             )}
             
-            {submitStatus === 'error' && (
+            {submitStatus === "error" && (
               <p className="mt-4 text-red-500">
                 {errorMessage || "There was an error sending your message. Please try again."}
               </p>
