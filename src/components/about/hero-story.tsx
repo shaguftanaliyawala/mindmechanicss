@@ -22,7 +22,7 @@ export function HeroStory() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Image src="/mm.jpg" alt="Mind Mechanics Founder" width={400} height={500} className="rounded-xl" />
+            <Image src="/mm.webp" alt="Mind Mechanics Founder" width={400} height={500} className="rounded-xl" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
