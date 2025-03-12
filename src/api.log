@@ -1,0 +1,12 @@
+2025-03-13 02:40:36,184 - __main__ - INFO - Creating new CSV file: contact_submissions.csv
+2025-03-13 02:40:36,187 - __main__ - INFO - Starting API server on port 5000
+2025-03-13 02:40:37,079 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.109:5000
+2025-03-13 02:40:37,081 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 02:40:56,791 - werkzeug - INFO - 127.0.0.1 - - [13/Mar/2025 02:40:56] "OPTIONS /api/contact HTTP/1.1" 200 -
+2025-03-13 02:40:57,049 - __main__ - INFO - Received contact form submission
+2025-03-13 02:40:57,055 - __main__ - INFO - Received data: {'name': 'sami', 'email': 'sami@gmail.com', 'subject': 'sami', 'message': 'sami\n'}
+2025-03-13 02:40:57,055 - __main__ - INFO - Successfully saved contact submission
+2025-03-13 02:40:57,055 - werkzeug - INFO - 127.0.0.1 - - [13/Mar/2025 02:40:57] "[35m[1mPOST /api/contact HTTP/1.1[0m" 201 -
