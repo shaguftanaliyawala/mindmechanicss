@@ -10,7 +10,6 @@ import { StatsSection } from "@/components/stats-section"
 import { ProcessSection } from "@/components/process-section"
 import { CTASection } from "@/components/cta-section"
 import { Analytics } from "@vercel/analytics/react"
-import { useRef } from "react"
 import { VideoPodcastSection } from "@/components/video-podcast-section"
 
 
