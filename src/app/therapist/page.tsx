@@ -37,7 +37,7 @@ export default function TherapistPage() {
               className="max-w-2xl text-white"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Shagufta Salman Naliyawala</h1>
-              <p className="text-xl md:text-2xl text-gray-200">Psychotherapist, Reiki Master & Mental Health Therapist</p>
+              <p className="text-xl md:text-2xl text-gray-200">Psychotherapist,Hypnotherapist,Reiki Healer ,EFT practitioner</p>
             </motion.div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function TherapistPage() {
               With over 13 years of experience in psychotherapy, counseling, and holistic healing, I am committed to guiding individuals toward emotional and mental well-being. My approach integrates psychotherapy, cognitive therapies, and alternative healing techniques such as Reiki, EFT, and hypnotherapy to foster personal transformation.
             </p>
             <p className="text-lg text-muted-foreground">
-              I am a certified Level 4 Integrative Psychotherapist (CPCAB, UK) and a recognized hypnotherapist by the National Guild of Hypnotists, USA. As the founder of Mind-Mechanics and a Mental Health Therapist at doctHERs, I have successfully provided therapy to over 1950 clients, offering personalized healing solutions for individuals, couples, and rehabilitation cases.
+              I am a certified Level 4 Integrative Psychotherapist (CPCAB, UK), Reiki Healer,, Addiction Therapist, EFT practitioner and a recognized hypnotherapist by the National Guild of Hypnotists, USA. As the founder of Mind-Mechanics(Light of Awareness) and a Mental Health Therapist at doctHERs, I have successfully provided therapy to over 1950 clients, offering personalized healing solutions for individuals, couples, and rehabilitation cases.
             </p>
           </motion.div>
         </div>
