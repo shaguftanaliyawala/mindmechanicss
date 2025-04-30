@@ -25,7 +25,7 @@ export function Header() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2">
             <Brain className="h-6 w-6" />
-            <span className="font-semibold">Mind Mechanics</span>
+            <span className="font-semibold">Mind Mechanics (Light of Awareness)</span>
           </Link>
         </div>
 
