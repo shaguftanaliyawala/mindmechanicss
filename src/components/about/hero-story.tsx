@@ -31,7 +31,7 @@ export function HeroStory() {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground">
-              At Mind Mechanics, we believe in the power of the mind, energy, and body to heal and restore balance.
+              At Mind Mechanics(Light of Awareness), we believe in the power of the mind, energy, and body to heal and restore balance.
               Founded by Shagufta Salman Naliyawala, a passionate psychotherapist, Reiki healer, hypnotherapist,
               Montessori Directress, and numerologist, our approach is designed to support you on your journey to mental
               clarity, emotional healing, and physical vitality.
