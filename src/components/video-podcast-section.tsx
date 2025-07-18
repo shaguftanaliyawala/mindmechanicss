@@ -12,15 +12,31 @@ const videos = [
     description: "This is the special video for public awareness to know the secrets behind your birthday coding. This is my own research to express in my way. I thinks every one keen to know his/her secrets coding to understand your gifts, information, secrets and missing things. So watch full video to get knowledge."
   },
   {
-    title: "Reiki Healing Insights | Light of Awareness",
-    src: "https://www.youtube.com/embed/QPeKQW-1XBY?start=3&autoplay=0&mute=1",
+    title: "Mother's Day Special| Light of Awareness",
+    src: "https://www.youtube.com/embed/QPeKQW-1XBY&autoplay=0&mute=1",
     description: "Discover the power of Reiki healing and how it can transform your life through energy alignment and mindfulness techniques."
   },
   {
-    title: "Mental Health Talk | From Trauma to Healing",
-    src: "https://www.youtube.com/embed/RurLBRw0h2E?start=231&autoplay=0&mute=1",
+    title: "Maritime Museum | Karachi Family Festival | Light of Awarness",
+    src: "https://www.youtube.com/embed/ctXglDHCUU8&autoplay=0&mute=1",
     description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
   },
+  {
+    title: "Mama's Special ماں کی خاصیت | Mother'day Special | Light of Awarness",
+    src: "https://www.youtube.com/embed/RurLBRw0h2E&autoplay=0&mute=1",
+    description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
+  },
+  {
+    title: "انسانی نفسیات | Human Psychology about Patients | Light of Awarness",
+    src: "https://www.youtube.com/embed/phwxXqwZRjA&autoplay=0&mute=1",
+    description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
+  },
+  {
+    title: "Mother's Day Special Promo | ماؤں کا عالمی دن | Light of Awarness",
+    src: "https://www.youtube.com/embed/ThIuO4UWSRI&autoplay=0&mute=1",
+    description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
+  },
+  
 ]
 
 export function VideoPodcastSection() {
