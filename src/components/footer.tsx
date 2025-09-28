@@ -84,7 +84,7 @@ export function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Mind Mechanics. All rights reserved.</p>
-          <p>Developed by <a href="https://muhammadsami.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Muhammad Sami</a></p>
+          <p>Developed by <a href="https://muhammadsami.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Galaxium Digital</a></p>
         </div>
       </div>
     </footer>
