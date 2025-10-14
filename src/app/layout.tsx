@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ Add Google AdSense Script Here */}
+        {/* ✅ Correct and recommended way to load AdSense */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1241215112545453"
@@ -32,8 +32,14 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
+
       <body className={`${inter.className} bg-[#0a0d14] text-white min-h-screen`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
           <CustomCursor />
           <ParticleBackground />
           <div className="relative z-10">
