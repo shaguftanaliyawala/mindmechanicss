@@ -22,6 +22,16 @@ const workshops: Workshop[] = [
       "/workshops/al11.jpg",
     ],
   },
+  {
+    title: "Empowering Educators for Inclusive Classrooms",
+    date: "October 22, 2025",
+    location: "Al Umeed Rehabilitation Association (AURA)",
+    images: [
+      "/workshops/al.jpg",
+      "/workshops/al1.jpg",
+      "/workshops/al11.jpg",
+    ],
+  },
 ]
 
 export default function WorkshopsFadeCarousel() {
@@ -34,12 +44,11 @@ export default function WorkshopsFadeCarousel() {
     timerRef.current = setInterval(() => {
       setIndex((prev) => (prev + 1) % workshops.length)
     }, 6000)
+
     return () => {
       if (timerRef.current) clearInterval(timerRef.current)
     }
   }, [paused])
-
-  const current = workshops[index]
 
   return (
     <section
@@ -57,7 +66,7 @@ export default function WorkshopsFadeCarousel() {
       >
         {workshops.map((workshop, i) => (
           <div
-            key={workshop.title}
+            key={workshop.title + i}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               i === index ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
@@ -97,10 +106,10 @@ export default function WorkshopsFadeCarousel() {
 
             {/* Overlay text */}
             <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-4 backdrop-blur-[2px] z-20">
-            <h3 className="text-xl font-semibold">{workshop.title}</h3>
-            <p className="text-sm">
+              <h3 className="text-xl font-semibold">{workshop.title}</h3>
+              <p className="text-sm">
                 {workshop.date} • {workshop.location}
-            </p>
+              </p>
             </div>
           </div>
         ))}
