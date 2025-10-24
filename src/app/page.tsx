@@ -11,6 +11,7 @@ import { ProcessSection } from "@/components/process-section"
 import { CTASection } from "@/components/cta-section"
 import { Analytics } from "@vercel/analytics/react"
 import { VideoPodcastSection } from "@/components/video-podcast-section"
+import WorkshopsCarousel from "@/components/WorkshopsCarousel"
 
 
 
@@ -29,9 +30,6 @@ export default function HomePage() {
     <div className="space-y-20">
       <HeroSection />
       <WelcomeSection /> {/* Implemented Welcome Section */}
-      <VideoPodcastSection />
-      <ImageGallery /> {/* Implemented Image Gallery */}
-
       <motion.div
         ref={ref}
         initial="hidden"
@@ -42,6 +40,9 @@ export default function HomePage() {
         <ServicesSection limit={3} />
       </motion.div>
 
+      <WorkshopsCarousel />
+      <ImageGallery /> {/* Implemented Image Gallery */}
+      <VideoPodcastSection />
       <StatsSection />
       <ProcessSection />
       <CTASection />

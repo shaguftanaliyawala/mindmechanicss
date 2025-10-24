@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 
 const workshops = [
-  { title: "Mindfulness Retreat", date: "March 15-16, 2024", location: "Serenity Center", image: "/placeholder.svg" },
+  { title: "Mindfulness Retreat", date: "March 15-16, 2024", location: "Serenity Center", image: "/al.jpg" },
   { title: "Stress Management Workshop", date: "March 22, 2024", location: "Wellness Hub", image: "/placeholder.svg" },
   {
     title: "Emotional Intelligence Seminar",
     date: "March 29, 2024",
     location: "Growth Center",
-    image: "/placeholder.svg",
+    image: "/al.jpg",
   },
   {
     title: "Couples Communication Workshop",
