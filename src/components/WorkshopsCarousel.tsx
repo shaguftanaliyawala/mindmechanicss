@@ -27,9 +27,9 @@ const workshops: Workshop[] = [
     date: "Feburary 14, 2026",
     location: "Aga Khan University Hospital",
     images: [
-      "/workshops/al.jpg",
-      "/workshops/al1.jpg",
-      "/workshops/al11.jpg",
+      "/workshops/ws1.jpg",
+      "/workshops/ws2.jpg",
+      "/workshops/ws3.jpg",
     ],
   },
 ]
