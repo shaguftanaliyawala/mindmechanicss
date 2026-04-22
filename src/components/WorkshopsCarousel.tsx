@@ -23,9 +23,9 @@ const workshops: Workshop[] = [
     ],
   },
   {
-    title: "Empowering Educators for Inclusive Classrooms",
-    date: "October 22, 2025",
-    location: "Al Umeed Rehabilitation Association (AURA)",
+    title: "Child Protection & Trauma-Informed Care Session",
+    date: "Feburary 14, 2026",
+    location: "Aga Khan University Hospital",
     images: [
       "/workshops/al.jpg",
       "/workshops/al1.jpg",
