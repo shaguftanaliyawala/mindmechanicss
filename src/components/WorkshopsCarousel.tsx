@@ -11,36 +11,57 @@ type Workshop = {
   images: string[]
 }
 
-const workshops: Workshop[] = [
-  {
-    title: "Empowering Educators for Inclusive Classrooms",
-    date: "October 22, 2025",
-    location: "Al Umeed Rehabilitation Association (AURA)",
-    images: [
-      "/workshops/al.jpg",
-      "/workshops/al1.jpg",
-      "/workshops/al11.jpg",
-    ],
-  },
-  {
-    title: "Child Protection & Trauma-Informed Care Session",
-    date: "Feburary 14, 2026",
-    location: "Aga Khan University Hospital",
-    images: [
-      "/workshops/ws1.jpg",
-      "/workshops/ws2.jpg",
-      "/workshops/ws3.jpg",
-    ],
-  },
-]
+const parseWorkshopsFromText = (text: string): Workshop[] => {
+  const workshops: Workshop[] = []
+  const blocks = text.split("---").map(block => block.trim()).filter(block => block.length > 0)
+
+  blocks.forEach(block => {
+    const lines = block.split("\n").map(line => line.trim()).filter(line => line.length > 0)
+    const workshop: Partial<Workshop> = {}
+
+    lines.forEach(line => {
+      if (line.startsWith("Title:")) {
+        workshop.title = line.replace("Title:", "").trim()
+      } else if (line.startsWith("Date:")) {
+        workshop.date = line.replace("Date:", "").trim()
+      } else if (line.startsWith("Location:")) {
+        workshop.location = line.replace("Location:", "").trim()
+      } else if (line.startsWith("Images:")) {
+        workshop.images = line.replace("Images:", "").trim().split(",").map(img => img.trim())
+      }
+    })
+
+    if (workshop.title && workshop.date && workshop.location && workshop.images) {
+      workshops.push(workshop as Workshop)
+    }
+  })
+
+  return workshops
+}
 
 export default function WorkshopsFadeCarousel() {
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
+  const [workshops, setWorkshops] = useState<Workshop[]>([])
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
-    if (paused) return
+    const fetchWorkshops = async () => {
+      try {
+        const response = await fetch("/workshops.txt")
+        const text = await response.text()
+        const parsedWorkshops = parseWorkshopsFromText(text)
+        setWorkshops(parsedWorkshops)
+      } catch (error) {
+        console.error("Failed to load workshops:", error)
+      }
+    }
+
+    fetchWorkshops()
+  }, [])
+
+  useEffect(() => {
+    if (paused || workshops.length === 0) return
     timerRef.current = setInterval(() => {
       setIndex((prev) => (prev + 1) % workshops.length)
     }, 6000)
@@ -48,7 +69,7 @@ export default function WorkshopsFadeCarousel() {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current)
     }
-  }, [paused])
+  }, [paused, workshops.length])
 
   return (
     <section
