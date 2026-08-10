@@ -7,32 +7,32 @@ import { motion } from "framer-motion"
 
 const videos = [
   {
-    title: "Integrative Psychotherapist | New Specialist at Light of Awareness",
+    title: "Integrative Psychotherapist | New Specialist at Mind Mechanics",
     src: "https://www.youtube.com/embed/yOC1E5mGlg0?autoplay=1&mute=1",
     description: "This is the special video for public awareness to know the secrets behind your birthday coding..."
   },
   {
-    title: "Mother's Day Special| Light of Awareness",
+    title: "Mother's Day Special| Mind Mechanics",
     src: "https://www.youtube.com/embed/QPeKQW-1XBY?autoplay=0&mute=1",
     description: "Discover the power of Reiki healing and how it can transform your life through energy alignment and mindfulness techniques."
   },
   {
-    title: "Maritime Museum | Karachi Family Festival | Light of Awarness",
+    title: "Maritime Museum | Karachi Family Festival | Mind Mechanics",
     src: "https://www.youtube.com/embed/ctXglDHCUU8?autoplay=0&mute=1",
     description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
   },
   {
-    title: "Mama's Special ماں کی خاصیت | Mother's Day Special | Light of Awarness",
+    title: "Mama's Special ماں کی خاصیت | Mother's Day Special | Mind Mechanics",
     src: "https://www.youtube.com/embed/RurLBRw0h2E?autoplay=0&mute=1",
     description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
   },
   {
-    title: "انسانی نفسیات | Human Psychology about Patients | Light of Awarness",
+    title: "انسانی نفسیات | Human Psychology about Patients | Mind Mechanics",
     src: "https://www.youtube.com/embed/phwxXqwZRjA?autoplay=0&mute=1",
     description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
   },
   {
-    title: "Mother's Day Special Promo | ماؤں کا عالمی دن | Light of Awarness",
+    title: "Mother's Day Special Promo | ماؤں کا عالمی دن | Mind Mechanics",
     src: "https://www.youtube.com/embed/ThIuO4UWSRI?autoplay=0&mute=1",
     description: "Explore how to manage emotional wounds and the importance of therapy in your healing journey."
   },
