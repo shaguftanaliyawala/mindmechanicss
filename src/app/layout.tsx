@@ -4,7 +4,6 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { CustomCursor } from "@/components/custom-cursor"
 import { ParticleBackground } from "@/components/particle-background"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script"
@@ -42,7 +41,6 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          <CustomCursor />
           <ParticleBackground />
           <div className="relative z-10">
             <Header />
