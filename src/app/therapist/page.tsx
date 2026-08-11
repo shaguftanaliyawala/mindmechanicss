@@ -106,7 +106,7 @@ export default function TherapistPage() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Take the first step towards mental wellness and personal growth. Schedule a consultation to discuss your unique needs and goals.
           </p>
-          <a href="/contact" className="inline-block px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-colors">
+          <a href="/contact" className="inline-block px-8 py-3 bg-primary text-black rounded-full font-medium hover:bg-primary/90 transition-colors">
             Book a Consultation
           </a>
         </motion.div>
