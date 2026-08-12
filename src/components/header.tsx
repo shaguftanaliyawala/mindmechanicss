@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image";
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -24,7 +24,12 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2">
-            <Brain className="h-6 w-6" />
+            <Image src="/logo.png"
+    alt="Mind Mechanics Logo"
+    width={32}
+    height={32}
+    className="object-contain"
+  />
             <span className="font-semibold">Mind Mechanics</span>
           </Link>
         </div>
