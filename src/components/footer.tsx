@@ -202,7 +202,7 @@ export function Footer() {
         href="tel:03XX-XXXXXXX"
         className="hover:text-primary"
       >
-        Phone: 03XX-XXXXXXX
+        Phone: +92 300 2265416
       </a>
     </div>
   </div>
