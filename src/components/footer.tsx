@@ -197,7 +197,7 @@ export function Footer() {
     </div>
 
     {/* Mobile */}
-    {/* <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2">
       <Phone className="w-4 h-4 shrink-0" />
       <a
         href="tel:03XX-XXXXXXX"
@@ -205,7 +205,7 @@ export function Footer() {
       >
         Phone: 03XX-XXXXXXX
       </a>
-    </div> */}
+    </div>
   </div>
 </div>
           </div>
