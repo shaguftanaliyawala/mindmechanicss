@@ -86,14 +86,14 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="flex justify-center"
         >
-          <div className="relative">
-        <Image
-        src="/logo.png"
-        alt="Logo"
-        width={64}
-        height={64}
-        className="object-contain"
-      />
+         <div className="relative">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={64}
+            height={64}
+            className="object-contain rounded-xl border border-gray-200 p-1"
+          />
             <motion.div
               animate={{ rotate: [0, 360] }}
               transition={{

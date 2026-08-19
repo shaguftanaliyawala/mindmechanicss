@@ -24,7 +24,7 @@ const workshops = [
   {
     title: "Anxiety Management Techniques",
     date: "April 12, 2024",
-    location: "Calm Clinic",
+    location: "Calm Therapy Stuido",
     image: "/placeholder.svg",
   },
 ]

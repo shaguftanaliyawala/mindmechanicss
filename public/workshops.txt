@@ -17,3 +17,8 @@ Title: Child Protection & Trauma-Informed Care Session
 Date: Feburary 14, 2026
 Location: Aga Khan University Hospital, Karachi
 Images: /workshops/ws1.jpg,/workshops/ws2.jpg,/workshops/ws3.jpg
+---
+Title: Building Stronger Minds: Conversations on Well-Being and Growth Session at ICAP Lahore – CA Women’s Day Celebration 2026
+Date: April 30, 2026
+Location: The Institute of Chartered Accountants of Pakistan, Lahore
+Images: /workshops/lahore_ICAP/2.png,/workshops/lahore_ICAP/1.png,/workshops/lahore_ICAP/3.png,

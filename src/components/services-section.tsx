@@ -162,7 +162,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Brain, Users, Lightbulb, Compass, Zap, Briefcase, Gem, Baby } from "lucide-react"
+import { Brain, Users, Lightbulb, Compass, Zap, Briefcase, Gem, Baby, Sparkle } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -216,13 +216,13 @@ const services = [
     bgImage: "/numerology-concept-composition.webp",
   },
   {
-    icon: Gem,
-    title: "Healing with Gemstones",
-    description: "Use gemstones to align energy, improve health, and enhance well-being.",
-    format: "Personalized recommendations.",
-    link: "/services",
-    bgImage: "/gem.avif",
-  },
+  icon: Sparkle,
+  title: "Reiki Healing",
+  description: "Channel universal life energy to promote deep relaxation, emotional balance, and natural healing.",
+  format: "In-person & distance sessions.",
+  link: "/services",
+  bgImage: "/reiki1.webp",
+},
   {
     icon: Brain,
     title: "Addiction Therapy",

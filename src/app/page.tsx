@@ -12,6 +12,8 @@ import { CTASection } from "@/components/cta-section"
 import { Analytics } from "@vercel/analytics/react"
 import { VideoPodcastSection } from "@/components/video-podcast-section"
 import WorkshopsCarousel from "@/components/WorkshopsCarousel"
+import OfficeToursComponent from "@/components/office_tour_component"
+import NewTherapyClinic from "@/components/office_tour_component"
 
 
 
@@ -37,6 +39,9 @@ export default function HomePage() {
         variants={fadeInUp}
         transition={{ duration: 0.6 }}
       >
+
+        
+    <NewTherapyClinic/>
         <ServicesSection limit={3} />
       </motion.div>
 
