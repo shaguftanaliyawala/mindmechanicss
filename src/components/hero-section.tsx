@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
@@ -86,7 +87,13 @@ export function HeroSection() {
           className="flex justify-center"
         >
           <div className="relative">
-            <Brain className="w-16 h-16 text-primary" />
+        <Image
+        src="/logo.png"
+        alt="Logo"
+        width={64}
+        height={64}
+        className="object-contain"
+      />
             <motion.div
               animate={{ rotate: [0, 360] }}
               transition={{
